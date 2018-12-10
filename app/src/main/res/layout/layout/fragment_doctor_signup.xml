@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reg_fragments.DoctorSignup"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:elevation="3dp"
+            android:textColor="@android:color/primary_text_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@android:color/darker_gray"
+            android:text="Please give your information"
+            android:layout_marginBottom="30dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/doctorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Name"
+                android:textColorHint="@android:color/holo_purple"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/doctorDeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Designation"
+                android:textColorHint="@android:color/holo_purple"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/specility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Speciality"
+                android:textColorHint="@android:color/holo_purple"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/consulttanttype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Consultant type"
+                android:textColorHint="@android:color/holo_purple"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Gender  : "
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/genderRG">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layout_marginLeft="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Female"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/chember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Chember"
+
+                android:textColorHint="@android:color/holo_purple"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/doctorPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColorHint="@android:color/holo_purple"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/doctorDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:hint="Other profile description"
+                    android:textColorHint="@android:color/holo_purple" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/doctorImg"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right|end"
+                android:layout_weight="1"
+                android:src="@drawable/profile_pic_upload_icon" />
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/nextBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NexT"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/errorTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="?android:colorAccent"/>
+
+
+    </LinearLayout>
+</ScrollView>

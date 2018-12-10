@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="4dp"
+    app:cardCornerRadius="4dp"
+    android:padding="4dp"
+    app:cardElevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/patientNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nurul Islam"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/agetWeightTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:text="Age 25   Weight 50 KG"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/phoneTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:text="Phone : 01727946384"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/addressTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:text="Address : Bhola"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="7"
+            android:layout_marginTop="5dp">
+            <Button
+                android:id="@+id/confirmBT"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="confirm"
+                android:background="@color/Green"
+                android:textColor="@android:color/white" />
+            <ImageButton
+                android:id="@+id/deleteBT"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:padding="2dp"
+                android:src="@android:drawable/ic_menu_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

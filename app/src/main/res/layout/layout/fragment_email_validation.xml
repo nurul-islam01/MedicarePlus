@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reg_fragments.EmailValidation"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/validationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="A verification is send to your email"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="214dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="50dp"/>
+        <Button
+            android:id="@+id/refreshBT"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:text="Refresh" />
+    </LinearLayout>
+</LinearLayout>

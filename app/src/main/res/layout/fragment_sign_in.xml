@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reg_fragments.SignIn"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phoneTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/phoneET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="+8801727942564"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/codeTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/codeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="code"
+            android:inputType="numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/signupBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Send Verification"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/white"/>
+    <LinearLayout
+        android:id="@+id/verifyBTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/verifyBT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Verify"
+            android:background="@color/colorPrimary"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/resendCodeBT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Resend Code"
+            android:background="@android:color/holo_purple"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/newAccountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:text="Crate new account"/>
+
+
+    <TextView
+        android:id="@+id/errorshowTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="end" />
+
+</LinearLayout>

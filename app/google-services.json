@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "875049272702",
+    "firebase_url": "https://medicare-plus.firebaseio.com",
+    "project_id": "medicare-plus",
+    "storage_bucket": "medicare-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875049272702:android:a4030e05f0311333",
+        "android_client_info": {
+          "package_name": "com.nurul.medicareplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875049272702-9l9ah7je229kmcj7jovqgnsd0evujtm1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nurul.medicareplus",
+            "certificate_hash": "59b8a47a5b3c748841a2c7821921dd7d57d8010b"
+          }
+        },
+        {
+          "client_id": "875049272702-os8bu2jg5athenj56injej0t6r19u3o4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvtLmCXL8qHZ03AggHeTCq-z1GdCAjh_A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875049272702-os8bu2jg5athenj56injej0t6r19u3o4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

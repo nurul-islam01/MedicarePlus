@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SingleMedicineTimer"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/medicineNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/medicineTimeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hour 2:2 PM"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicines"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_margin="20sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:padding="5dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/allmedicineRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/addIB"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+
+        <include
+            layout="@layout/medicine_add_to_timer_dialoge"/>
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</ScrollView>

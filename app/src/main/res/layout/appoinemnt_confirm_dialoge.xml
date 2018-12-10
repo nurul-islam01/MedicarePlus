@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_gravity="center">
+    <DatePicker
+        android:id="@+id/patientAppoinemntDateDP"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"/>
+    <TimePicker
+        android:id="@+id/appoinmentTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:calendarViewShown="false"
+        android:timePickerMode="spinner"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/serialNoET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Serial No."/>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

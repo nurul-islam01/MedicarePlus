@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:scrollbars="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="Mr. Aziz"
+            android:textSize="25dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="70dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/ageTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age : 60"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                />
+            <TextView
+                android:id="@+id/weightTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight : 50 KG"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Others Details "
+                android:textSize="25dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:singleLine="true"
+                android:paddingBottom="8dp"/>
+            <TextView
+                android:id="@+id/phoneTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone : Null"
+                android:textSize="18sp"
+                android:editable="true"
+                android:singleLine="true"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email  : Null"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/genderTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender  : Male"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:padding="10dp"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
